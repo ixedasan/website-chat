@@ -1,5 +1,6 @@
 import { ragChat } from '@/lib/rag-chat'
 import { redis } from '@/lib/redis'
+import Chat from '@/components/Chat'
 
 interface Props {
   params: {
@@ -18,6 +19,8 @@ const Page = async ({ params }: Props) => {
   const remodeledUrl = remodelUrl({ url: params.url as string[] })
   const isIndexed = await redis.sismember('indexed-urls', remodeledUrl)
 
+  const sessionId = 'mock-id'
+
   if (!isIndexed) {
     await ragChat.context.add({
       type: 'html',
@@ -28,7 +31,7 @@ const Page = async ({ params }: Props) => {
     await redis.sadd('indexed-urls', remodeledUrl)
   }
 
-  return <>page</>
+  return <Chat sessionId={sessionId} initialMessages={[]} />
 }
 
 export default Page
