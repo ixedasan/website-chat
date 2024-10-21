@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Website Chat AI - Interactive Website Content Assistant
 
-## Getting Started
+Website Chat AI is a powerful web application that allows users to have intelligent conversations about any website's content using advanced RAG (Retrieval-Augmented Generation) technology and AI.
 
-First, run the development server:
+## Features
+
+- **Website Content Analysis**: Automatically processes and indexes any website's content
+- **Intelligent Chat Interface**: Natural conversation flow with context-aware responses
+- **Persistent Sessions**: Maintains chat history between sessions
+- **Real-time Processing**: Quick and efficient content retrieval and response generation
+- **User-friendly Interface**: Clean, modern UI built with Next.js and shadcn/ui
+
+## Installation
+
+To clone and run this application, you'll need [Git](https://git-scm.com/) and [PNPM](https://pnpm.io/) installed on your computer. From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone this repository
+$ git clone https://github.com/ixedasan/frame-sequence-animation.git
+
+# Navigate to the project directory
+$ cd frame-sequence-animation
+
+# Install dependencies
+$ pnpm install
+
+# Set up environment variables
+$ cp .env.example .env.local
+
+# Start the development server
+$ pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Visit the home page and enter a website URL
+2. Wait for the content to be processed and indexed
+3. Start chatting with the AI about the website's content
+4. Your chat history will be preserved for future sessions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contribution
 
-## Learn More
+Contributions are welcome! Please feel free to submit a pull request or open an issue for discussion.
 
-To learn more about Next.js, take a look at the following resources:
+## Acknowledgments
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Thanks to [upstash](https://github.com/upstash/rag-chat) for their AI technology
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful component library
