@@ -2,6 +2,15 @@
 
 Website Chat AI is a powerful web application that allows users to have intelligent conversations about any website's content using advanced RAG (Retrieval-Augmented Generation) technology and AI.
 
+<div align="center">
+  <h3>
+    <a href="https://website-chat-coral.vercel.app/" target="_blank" rel="noopener noreferrer">
+      Demo URL
+    </a>
+  </h3>
+</div>
+
+
 ## Features
 
 - **Website Content Analysis**: Automatically processes and indexes any website's content
@@ -16,10 +25,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com/) and [
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/ixedasan/frame-sequence-animation.git
+$ git clone https://github.com/ixedasan/website-chat
 
 # Navigate to the project directory
-$ cd frame-sequence-animation
+$ cd website-chat
 
 # Install dependencies
 $ pnpm install
